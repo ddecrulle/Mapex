@@ -140,6 +140,7 @@ const OrderFilter = ({ campaigns, favorites, setOpen }) => {
 			query.delete('favorites');
 		}
 		history.replace({ search: query.toString() });
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [stateFavorites, history]);
 
 	return (

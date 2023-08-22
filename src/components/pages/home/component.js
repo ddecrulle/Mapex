@@ -93,6 +93,7 @@ const Home = () => {
 		//If query params change we refresh filters et sort param
 		setFilters(refreshFilters());
 		setSortCriteria(refreshSortCriteria());
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [query.toString()]);
 
 	useEffect(() => {

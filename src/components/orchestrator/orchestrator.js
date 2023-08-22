@@ -66,7 +66,6 @@ const Orchestrator = ({
 	});
 
 	const classes = useStyles();
-	const [loading, setLoading] = useState(false);
 	const [openModal, setOpenModal] = useState(false);
 	const [textSendData, setTextSendData] = useState('');
 

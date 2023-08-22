@@ -41,6 +41,7 @@ const SearchBar = ({ campaigns, open, setOpen, favorites }) => {
 			query.delete('textSearch');
 		}
 		history.replace({ search: query.toString() });
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [textSearch, history]);
 
 	const handleChange = (e) => {
